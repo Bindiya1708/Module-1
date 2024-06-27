@@ -6,7 +6,6 @@ contract ErrorHandling {
     uint256 public balance;
 
     function setBalance(uint256 _balance) public {
-        // Ensure the balance is not zero
         require(_balance > 0, "Balance must be greater than zero");
         balance = _balance;
     }
